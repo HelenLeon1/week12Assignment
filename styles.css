@@ -1,0 +1,25 @@
+
+
+body {
+    background-color: rgb(115, 147, 179);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h4 {
+    text-decoration-line: underline;
+    font-size: 25px;
+}
+
+#submitButton:hover {
+    background-color: #000836;
+}
+
+.accordion-button:hover {
+    background-color: white;
+}
+
+#update-button:hover {
+    background-color: #000836;
+}
+
+

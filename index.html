@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Things Survey</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="text-center m-5">Favorite Things Survey</h1>
+    
+    <!--Input Form-->
+    <div class="container-lg">
+        <div class="text-center">
+            <h4>Please Fill Out the Form Below: </h4>
+        </div> 
+        <div class="row justify-content-center my-5">
+            <div class="col-md-6">
+                <form id="newUser">
+                    <label for="fullname" class="form-label">Name: </label>
+                    <input type="text" class="form-control mb-3" id="fullName"/>
+
+                    <label for="hobby" class="form-label">Favorite Hobby:</label>
+                    <input type="text" id="hobby" class="form-control mb-3"/>
+        
+                    <label for="song" class="form-label">Favorite Song:</label>
+                    <input type="text" id="song" class="form-control mb-3"/>
+        
+                    <label for="food" class="form-label">Favorite Food:</label>
+                    <input type="text" id="food" class="form-control mb-3"/>
+
+                    <div class="mb-4 text-center">
+                        <button id="submitButton" class="btn btn-primary mb-2">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Results Accordion-->
+    <h2 class="text-center m-3">Results</h2>
+    <div class="container mb-5">
+        <div class="accordion" id="surveyData">
+                    
+        </div>
+    </div>
+
+    <!--Update Form-->
+    <div class="container-lg">
+        <div class="text-center">
+            <h4>Enter the Information You Would Like To Update</h4>
+            <p id="update-info">Please Answer All of the Questions on the Form</p>
+        </div> 
+        <div class="row justify-content-center my-5">
+            <div class="col-md-6">
+                <form id="updateUserData">
+                    <label for="update-name" class="form-label">Name:</label>
+                    <input id="update-name" class="form-control mb-3" />
+    
+                    <label for="update-hobby" class="form-label">Favorite Hobby:</label>
+                    <input type="text" id="update-hobby" class="form-control mb-3"/>
+                
+                    <label for="update-song" class="form-label">Favorite Song:</label>
+                    <input type="text" id="update-song" class="form-control mb-3"/>
+                   
+                    <label for="update-food" class="form-label">Favorite Food:</label>
+                    <input type="text" id="update-food" class="form-control mb-3"/>
+                   
+                    <label for="update-id" class="form-label">Id:</label>
+                    <input type="text" id="update-id" class="form-control mb-3"/>
+                   
+                    <div class="mb-4 text-center">
+                        <button id="update-button" class="btn btn-primary mb-2">Update</button>
+                    </div>
+                </form>  
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="index.js"></script>    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
